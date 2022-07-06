@@ -24,18 +24,37 @@ body{
     .content{
         display: flex;
         flex-direction: column;
-        background: white;
         border-radius: 0.5rem;
         overflow: hidden;
+        @media only screen and (min-width: 700px){
+            flex-direction: row;
+            max-width: 42%;
+            margin: 0 auto;
+        }
         .img-container{
-            img{
+            @media only screen and (min-width: 700px){
+                flex-basis: 50%;
+            }
+            .mob{
+                display: block;
                 max-width: 100%;
+                @media only screen and (min-width: 700px){
+                    display: none;
+                }
             }
             .desk{
                 display: none;
+                @media only screen and (min-width: 700px){
+                    display: block;
+                    max-width: 100%;
+                }
             }
         }
         .text-container{
+            @media only screen and (min-width: 700px) {
+                    flex-basis: 50%;
+                    padding: 2rem;
+                }
             background: $White;
             padding: 1.5rem;
             .perfume{
@@ -61,6 +80,9 @@ body{
             }
             .price-cotainer{
                 margin-top: 3rem;
+                @media only screen and (min-width: 700px){
+                    margin-top: 5rem;
+                }
                 .price{
                     display: flex;
                     align-items: center;
