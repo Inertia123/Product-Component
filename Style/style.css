@@ -107,12 +107,6 @@ body .content .text-container .price-cotainer {
   margin-top: 3rem;
 }
 
-@media only screen and (min-width: 700px) {
-  body .content .text-container .price-cotainer {
-    margin-top: 5rem;
-  }
-}
-
 body .content .text-container .price-cotainer .price {
   display: -webkit-box;
   display: -ms-flexbox;

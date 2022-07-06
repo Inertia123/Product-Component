@@ -80,9 +80,6 @@ body{
             }
             .price-cotainer{
                 margin-top: 3rem;
-                @media only screen and (min-width: 700px){
-                    margin-top: 5rem;
-                }
                 .price{
                     display: flex;
                     align-items: center;
