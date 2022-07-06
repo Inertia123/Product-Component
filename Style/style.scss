@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap');
 
 $Dark-cyan: hsl(158, 36%, 37%);
 $Cream: hsl(30, 38%, 92%);
@@ -13,4 +13,81 @@ $Montserrat: 'Montserrat',sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background: $Cream;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 0 1rem;
+    font-family: $Montserrat;
+    .content{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        .img-container{
+            img{
+                max-width: 100%;
+            }
+            .desk{
+                display: none;
+            }
+        }
+        .text-container{
+            background: $White;
+            padding: 1.5rem;
+            .perfume{
+                p{
+                    text-transform: uppercase;
+                    letter-spacing: 0.25rem;
+                    color: $Dark-grayish-blue;
+                    font-size: 0.8rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            h1{
+                font-family: $Fraunces;
+                color: $Very-dark-blue;
+                line-height: 2rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 0.85rem;
+                line-height: 1.35rem;
+                color: $Dark-grayish-blue;
+                margin-bottom: 1rem;
+            }
+            .price-cotainer{
+                margin-top: 3rem;
+                .price{
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    h1{
+                        color: $Dark-cyan;
+                    }
+                    p{
+                        text-decoration: line-through;
+                    }
+                }
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background: $Dark-cyan;
+                    color: $White;
+                    font-family: $Montserrat;
+                    gap: 0.5rem;
+                    font-weight: 700;
+                    padding: 0.8rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
 }
